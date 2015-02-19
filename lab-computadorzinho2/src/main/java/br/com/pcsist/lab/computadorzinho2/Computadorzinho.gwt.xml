@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='Computadorzinho'>
+
+  <inherits name='com.google.gwt.user.User' />
+  <inherits name='org.fusesource.restygwt.RestyGWT' />
+  <inherits name='com.google.gwt.user.theme.standard.Standard' />
+  <entry-point class='br.com.pcsist.lab.computadorzinho2.client.Computadorzinho' />
+
+  <source path='client' />
+  <source path='shared' />
+
+</module>

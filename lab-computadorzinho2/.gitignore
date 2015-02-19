@@ -1,0 +1,8 @@
+/target/
+/.externalToolBuilders
+/.settings
+/.gwt
+/.tern-project
+/.classpath
+/.project
+/Users
