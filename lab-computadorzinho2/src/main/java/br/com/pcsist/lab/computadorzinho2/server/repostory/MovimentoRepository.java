@@ -20,7 +20,7 @@ public class MovimentoRepository {
   private JdbcTemplate template;
 
   @Autowired
-  public MovimentoRepository(@Qualifier("winthorDatasource") DataSource dataSource) {
+  public MovimentoRepository(@Qualifier("winthorDS") DataSource dataSource) {
     template = new JdbcTemplate(dataSource);
   }
 

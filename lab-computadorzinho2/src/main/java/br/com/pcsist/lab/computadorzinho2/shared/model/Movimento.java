@@ -57,4 +57,10 @@ public class Movimento {
     return status;
   }
 
+  @Override
+  public String toString() {
+    return "Movimento = codProd: " + codProd + ", dtMov: " + dtMov + ", numNota: " + numNota + ", codoPer: " + codoPer
+        + ", qt: " + qt + ", pUnit: " + pUnit + ", codFilial: " + codFilial + ", status: " + status;
+  }
+
 }

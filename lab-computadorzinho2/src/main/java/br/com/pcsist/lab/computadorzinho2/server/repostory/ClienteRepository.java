@@ -20,7 +20,7 @@ public class ClienteRepository {
   private JdbcTemplate template;
 
   @Autowired
-  public ClienteRepository(@Qualifier("localDatasource") DataSource dataSource) {
+  public ClienteRepository(@Qualifier("localDS") DataSource dataSource) {
     template = new JdbcTemplate(dataSource);
   }
 

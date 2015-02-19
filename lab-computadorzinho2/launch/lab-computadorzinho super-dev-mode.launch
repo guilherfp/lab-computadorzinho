@@ -20,7 +20,7 @@
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="com.google.gdt.eclipse.maven.mavenClasspathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.gwt.dev.DevMode"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-superDevMode -noserver -war &quot;C:\Users\Guilherme Pacheco\workspace\javaee\lab-computadorzinho2\src\main\webapp&quot; -logLevel INFO -remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -codeServerPort 9997 br.com.pcsist.lab.computadorzinho2.Computadorzinho"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-noserver -superDevMode -war &quot;C:\Users\Guilherme Pacheco\git\lab-computadorzinho\lab-computadorzinho2\src\main\webapp&quot; -logLevel INFO -remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -codeServerPort 9997 br.com.pcsist.lab.computadorzinho2.Computadorzinho"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="lab-computadorzinho2"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:MaxPermSize=256m -Xmx512m"/>
 </launchConfiguration>

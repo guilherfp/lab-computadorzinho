@@ -10,9 +10,9 @@
   <mvc:annotation-driven />
   <context:annotation-config />
 
-  <context:component-scan base-package="br.com.pcsist.lab.computadorzinho2" />
+  <context:component-scan base-package="br.com.pcsist.lab.computadorzinho2.server" />
 
-  <bean id="localDataSource" class="com.jolbox.bonecp.BoneCPDataSource">
+  <bean id="localDS" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
     <property name="driverClass" value="com.mysql.jdbc.Driver" />
     <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1/comp" />
     <property name="username" value="root" />
@@ -26,13 +26,13 @@
 
   <!-- <jdbc:embedded-database id="data" type="H2" /> -->
 
-  <bean id="wintorDataSource" class="com.jolbox.bonecp.BoneCPDataSource">
-    <property name="driverClass" value="orable.jdbc.OracleDriver" />
-    <property name="jdbcUrl" value="jdbc:oracle:thin@//10.62.40.14/local" />
+  <bean id="winthorDS" class="com.jolbox.bonecp.BoneCPDataSource" destroy-method="close">
+    <property name="driverClass" value="oracle.jdbc.OracleDriver" />
+    <property name="jdbcUrl" value="jdbc:oracle:thin:@//10.62.33.5:1521/local" />
     <property name="username" value="local" />
     <property name="password" value="local" />
-    <property name="maxConnectionsPerPartition" value="30" />
-    <property name="minConnectionsPerPartition" value="10" />
+    <property name="maxConnectionsPerPartition" value="20" />
+    <property name="minConnectionsPerPartition" value="5" />
     <property name="partitionCount" value="3" />
     <property name="acquireIncrement" value="5" />
     <property name="statementsCacheSize" value="100" />
