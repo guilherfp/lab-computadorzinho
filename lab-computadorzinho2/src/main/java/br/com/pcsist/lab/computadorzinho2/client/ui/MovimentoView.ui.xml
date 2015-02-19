@@ -1,11 +1,18 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui"
-  xmlns:b="urn:import:org.gwtbootstrap3.client.ui.gwt">
+  xmlns:b="urn:import:org.gwtbootstrap3.client.ui.gwt" xmlns:gb="urn:import:org.gwtbootstrap3.client.ui">
 
   <g:HTMLPanel>
-    <div class="table-responsive">
-      <b:CellTable ui:field="table" bordered="true" condensed="true" hover="true" striped="true" />
-    </div>
+    <gb:Panel>
+      <gb:PanelHeader>
+        <gb:Heading text="Movimentos" />
+      </gb:PanelHeader>
+      <gb:PanelBody>
+        <div class="table-responsive">
+          <b:CellTable ui:field="table" bordered="true" condensed="true" hover="true" striped="true" />
+        </div>
+      </gb:PanelBody>
+    </gb:Panel>
   </g:HTMLPanel>
 
 </ui:UiBinder> 

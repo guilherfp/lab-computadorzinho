@@ -31,56 +31,48 @@ public class MovimentoView extends Composite {
   public MovimentoView() {
     initWidget(uiBinder.createAndBindUi(this));
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.codoPer;
       }
     }, "Código");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.dtMov;
       }
     }, "Data");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.numNota;
       }
     }, "Nº Nota");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.codoPer;
       }
     }, "CodPer");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.qt;
       }
     }, "QTD.");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.pUnit;
       }
     }, "UN.");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.codFilial;
       }
     }, "Filial");
     table.addColumn(new TextColumn<Mov>() {
-
       @Override
       public String getValue(Mov mov) {
         return mov.status;

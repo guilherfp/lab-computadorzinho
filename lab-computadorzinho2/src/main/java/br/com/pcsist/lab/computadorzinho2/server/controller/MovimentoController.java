@@ -1,6 +1,5 @@
 package br.com.pcsist.lab.computadorzinho2.server.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +21,6 @@ public class MovimentoController {
   @ResponseBody
   @RequestMapping(value = "/todos", method = RequestMethod.GET)
   public List<Movimento> todos() {
-    final List<Movimento> movimentos = new ArrayList<>();
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    movimentos.add(new Movimento("1", "1", "1", "1", "1", "1", "1", "1"));
-    return movimentos;
-    // return movimentoRepository.todos();
+    return movimentoRepository.todos();
   }
 }
